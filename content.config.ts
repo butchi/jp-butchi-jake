@@ -14,5 +14,16 @@ export default defineContentConfig({
         youTubeMusicId: z.string().optional(),
       }),
     }),
+    bandcamp: defineCollection({
+      type: "page",
+      source: "v0/1/bandcamp/*.md",
+      schema: z.object({
+        title: z.string(),
+        by: z.string(),
+        image: z.string().url().optional(),
+        bandcampId: z.string(),
+        releaseDate: z.string().optional(),
+      }),
+    }),
   },
 })
