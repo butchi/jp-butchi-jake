@@ -103,41 +103,43 @@ onMounted(() => {
         >
       </v-btn-toggle>
 
-      <iframe
-        v-if="post?.spotifyId"
-        v-show="selectedEmbeddingPlayer === 'spotify'"
-        data-testid="embed-iframe"
-        style="border-radius: 12px"
-        :src="`https://open.spotify.com/embed/album/${post?.spotifyId}?utm_source=generator`"
-        width="100%"
-        height="352"
-        frameBorder="0"
-        allowfullscreen="false"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy" />
-      <iframe
-        v-if="post?.appleMusicId"
-        v-show="selectedEmbeddingPlayer === 'appleMusic'"
-        allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
-        frameborder="0"
-        height="450"
-        style="
-          width: 100%;
-          max-width: 660px;
-          overflow: hidden;
-          border-radius: 10px;
-        "
-        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-        :src="`https://embed.music.apple.com/jp/album/richard-d-james-album/${post?.appleMusicId}`" />
-      <iframe
-        v-if="post?.youTubeMusicId"
-        v-show="selectedEmbeddingPlayer === 'youTubeMusic'"
-        id="ytplayer"
-        type="text/html"
-        width="640"
-        height="360"
-        :src="`https://www.youtube.com/embed?listType=playlist&list=${post?.youTubeMusicId}`"
-        frameborder="0" />
+      <v-row>
+        <v-col v-if="post?.spotifyId" v-show="selectedEmbeddingPlayer === 'spotify'">
+          <iframe
+            data-testid="embed-iframe"
+            style="border-radius: 12px"
+            :src="`https://open.spotify.com/embed/album/${post?.spotifyId}?utm_source=generator`"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allowfullscreen="false"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy" />
+        </v-col>
+        <v-col v-if="post?.appleMusicId" v-show="selectedEmbeddingPlayer === 'appleMusic'">
+          <iframe
+            allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+            frameborder="0"
+            height="450"
+            style="
+              width: 100%;
+              max-width: 660px;
+              overflow: hidden;
+              border-radius: 10px;
+            "
+            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+            :src="`https://embed.music.apple.com/jp/album/richard-d-james-album/${post?.appleMusicId}`" />
+        </v-col>
+        <v-col v-if="post?.youTubeMusicId" v-show="selectedEmbeddingPlayer === 'youTubeMusic'">
+          <iframe
+            id="ytplayer"
+            type="text/html"
+            width="640"
+            height="360"
+            :src="`https://www.youtube.com/embed?listType=playlist&list=${post?.youTubeMusicId}`"
+            frameborder="0" />
+        </v-col>
+      </v-row>
     </v-container>
   </v-main>
 </template>
