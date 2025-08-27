@@ -7,6 +7,10 @@ const pageArr = [{
   title: "電話する",
   image: "https://placehold.jp/150x150.png?text=電話する",
   path: "/custom/tel"
+}, {
+  title: "カートに追加",
+  image: "https://placehold.jp/150x150.png?text=カートに追加",
+  path: "/custom/cart"
 }]
 
 const width = 1024
