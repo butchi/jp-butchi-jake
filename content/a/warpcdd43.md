@@ -1,6 +1,5 @@
 ---
 by: Aphex Twin
-description: Aphex Twinの1996年のアルバム。エクスペリメンタルな電子音楽が特徴。
 image: https://i.scdn.co/image/ab67616d0000b2731facf6ff0af031474a1c5031
 spotifyId: 43s2fKRQsOSB6rSrxtAXKK
 appleMusicId: 313158353
