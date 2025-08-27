@@ -6,15 +6,15 @@ import QRCode from "qrcode"
 const pageArr = [{
   title: "電話する",
   image: "/img/phone.png",
-  path: "/custom/tel"
+  path: "/v0/1/custom/tel"
 }, {
   title: "Amazonカスタム",
   image: "/img/cart.png",
-  path: "/custom/amazon"
+  path: "/v0/1/custom/amazon"
 }, {
   title: "UberEatsカスタム",
   image: "/img/food.png",
-  path: "/custom/uber-eats"
+  path: "/v0/1/custom/uber-eats"
 }]
 
 const width = 1024

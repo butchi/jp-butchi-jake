@@ -3,8 +3,8 @@ import { onMounted, ref } from "vue"
 import { useRoute } from "vue-router"
 
 const route = useRoute()
-const { data: post } = await useAsyncData("example", () => {
-  return queryCollection("a").path(route.path).first()
+const { data: post } = await useAsyncData("album", () => {
+  return queryCollection("album").path(route.path).first()
 })
 
 const selectedEmbeddingPlayer = ref("")

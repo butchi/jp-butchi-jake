@@ -8,7 +8,7 @@ import QRCode from "qrcode"
 const width = 1024
 
 const { data: posts } = await useAsyncData(() => {
-  return queryCollection("a")
+  return queryCollection("album")
     .select("title", "by", "image", "path")
     .order("by", "ASC")
     .all()
