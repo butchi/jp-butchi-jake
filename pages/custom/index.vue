@@ -5,15 +5,15 @@ import QRCode from "qrcode"
 
 const pageArr = [{
   title: "電話する",
-  image: "https://placehold.jp/150x150.png?text=電話する",
+  image: "/img/phone.png",
   path: "/custom/tel"
 }, {
   title: "Amazonカスタム",
-  image: "https://placehold.jp/150x150.png?text=Amazonカスタム",
+  image: "/img/cart.png",
   path: "/custom/amazon"
 }, {
   title: "UberEatsカスタム",
-  image: "https://placehold.jp/150x150.png?text=UberEatsカスタム",
+  image: "/img/food.png",
   path: "/custom/uber-eats"
 }]
 
