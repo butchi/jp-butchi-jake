@@ -11,6 +11,10 @@ const pageArr = [{
   title: "カートに追加",
   image: "https://placehold.jp/150x150.png?text=カートに追加",
   path: "/custom/cart"
+}, {
+  title: "UberEatsカスタム",
+  image: "https://placehold.jp/150x150.png?text=UberEatsカスタム",
+  path: "/custom/uber-eats"
 }]
 
 const width = 1024
