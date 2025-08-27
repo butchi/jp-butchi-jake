@@ -29,6 +29,7 @@ onMounted(() => {
 
       <v-form v-if="post">
         <v-btn
+          :disabled="!post?.spotifyId"
           :href="`https://open.spotify.com/intl-ja/album/${post?.spotifyId}`"
           target="_blank"
           rel="noopener"
@@ -49,6 +50,7 @@ onMounted(() => {
           <span class="ml-2">Spotify</span>
         </v-btn>
         <v-btn
+          :disabled="!post?.appleMusicId"
           :href="`https://music.apple.com/jp/album/${post?.appleMusicId}`"
           target="_blank"
           rel="noopener"
@@ -70,6 +72,7 @@ onMounted(() => {
           <span class="ml-2">Apple Music</span>
         </v-btn>
         <v-btn
+          :disabled="!post?.youTubeMusicId"
           :href="`https://music.youtube.com/watch?list=${post?.youTubeMusicId}`"
           target="_blank"
           rel="noopener"
