@@ -33,7 +33,7 @@ onMounted(async () => {
 <template>
   <v-main>
     <v-container>
-      <h1>コレクション一覧</h1>
+      <h1>CDアルバム一覧</h1>
       <v-row>
         <v-col
           v-for="post in posts"
