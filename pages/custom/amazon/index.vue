@@ -2,7 +2,7 @@
   <v-main class="d-flex align-center justify-center" style="background: linear-gradient(135deg, #e0e7ff 0%, #f5f5fa 100%); min-height: 100vh;">
     <v-card class="pa-8" elevation="8" max-width="500" style="width:100%; text-align:center;">
       <v-icon size="48" color="primary">mdi-cart</v-icon>
-      <h2 class="mt-2" style="font-weight:700; letter-spacing:2px;">Amazonカート</h2>
+      <h2 class="mt-2" style="font-weight:700; letter-spacing:2px;">Amazonカスタム</h2>
       <p class="mb-6">(自分のスマホ専用)</p>
       <v-form @submit.prevent="addLink">
         <v-text-field
@@ -17,7 +17,7 @@
       </v-form>
       <v-divider class="my-6"></v-divider>
       <div v-if="cartLinks.length">
-        <h3 class="mb-4" style="font-weight:600;">カート一覧</h3>
+        <h3 class="mb-4" style="font-weight:600;">商品一覧</h3>
         <div class="d-flex flex-wrap justify-center">
           <v-card
             v-for="(link, idx) in cartLinks"
