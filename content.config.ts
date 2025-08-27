@@ -8,7 +8,6 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string(),
         by: z.string(),
-        description: z.string(),
         image: z.string().url().optional(),
         spotifyId: z.string().optional(),
         appleMusicId: z.string().optional(),

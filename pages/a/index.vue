@@ -9,7 +9,7 @@ const width = 1024
 
 const { data: posts } = await useAsyncData(() => {
   return queryCollection("a")
-    .select("title", "by", "description", "image", "path")
+    .select("title", "by", "image", "path")
     .order("by", "ASC")
     .all()
 })
